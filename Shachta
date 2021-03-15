@@ -1,0 +1,158 @@
+
+i = 0
+glub = 0
+sher = 0
+print("hello pidr")
+print("Kak gluboko kopat?")
+glub=tonumber(read())
+print("Sherina")
+sher=tonumber(read())
+sher = sher - 1
+
+
+while i ~= glub do
+turtle.select(1)
+turtle.getFuelLevel() 
+print(turtle.getFuelLevel() ) 
+
+
+turtle.dig();
+
+turtle.digDown();
+	--prow na gravij
+	if	turtle.inspect() ~= false then 
+		while turtle.inspect() ~= false do 
+			turtle.dig()
+			print("grawi jest")
+		end
+	end
+	--kon
+turtle.forward(); 
+turtle.turnLeft();
+
+
+for i1 = 1, sher do 
+	turtle.dig();
+	turtle.digUp();
+	turtle.digDown();
+	--prow na gravij
+	if	turtle.inspect() ~= false then 
+		while turtle.inspect() ~= false do 
+			turtle.dig()
+			print("grawi jest")
+		end
+	end
+	--kon
+
+	turtle.forward(); 
+end
+
+
+--podjem w werh--
+turtle.digDown()
+turtle.digUp()
+turtle.up()
+turtle.digUp()
+turtle.up()
+turtle.digUp()
+turtle.up()
+turtle.digUp()
+turtle.turnRight()
+turtle.turnRight()
+
+for i1 = 1, sher do 
+	turtle.dig();
+	turtle.digUp();
+	turtle.digDown();
+	--prow na gravij
+	if	turtle.inspect() ~= false then 
+		while turtle.inspect() ~= false do 
+			turtle.dig()
+			print("grawi jest")
+		end
+	end
+	--kon
+
+	turtle.forward(); 
+end
+
+print("W nizz")
+turtle.digUp()
+turtle.down()
+turtle.digDown();
+turtle.down()
+turtle.digDown();
+turtle.down()
+turtle.digDown();
+turtle.down()
+
+
+
+turtle.turnLeft()
+
+
+--konec--
+
+
+
+
+
+-- turtle.turnRight();
+-- turtle.dig();
+-- turtle.digUp();
+-- turtle.digDown();
+-- turtle.forward();
+-- turtle.turnRight();
+
+
+-- for i1 = 0, 8 do 
+-- 	turtle.dig();
+-- 	turtle.digUp();
+-- 	turtle.digDown();
+-- 	turtle.forward(); 
+-- end
+
+-- turtle.turnLeft();
+-- turtle.dig();
+-- turtle.digUp();
+-- turtle.digDown();
+
+-- --?????? ????????--
+-- turtle.digUp()
+-- turtle.select(16)
+
+
+
+
+
+if turtle.getItemCount(16) > 15 then   
+  turtle.select(1)
+  turtle.placeUp()
+  turtle.select(1)
+    for i=2, 16 do 
+      turtle.select(1)
+     
+        turtle.select(i)
+        turtle.dropUp()  
+turtle.select(1)
+end
+turtle.select(1)
+end 
+turtle.dig();
+
+
+--?????--
+
+i = i + 1 ;
+end
+turtle.turnRight()
+turtle.turnRight()
+
+
+
+for i = 0, glub do 
+	turtle.forward()
+end
+
+
+
