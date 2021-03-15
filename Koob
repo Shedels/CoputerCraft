@@ -1,0 +1,91 @@
+i = 0
+wys = 0
+sher = 0
+dlin = 0
+
+
+print("was privetstwuet programa kub BLAT")
+print("Toplivo = ")
+print(turtle.getFuelLevel())
+print("Wysota -> ")
+wys=tonumber(read())
+print("dlina -> ")
+dlin= tonumber(read())
+print("sherina -> ") 
+sher = tonumber(read())
+
+for i = 1, wys do
+
+--sherina
+for i2 = 1, sher do 
+
+	--dlina
+	for i3 = 1, dlin do
+
+    turtle.drop(64)
+		if	turtle.inspect() ~= false then 
+			while turtle.inspect() ~= false do 
+				turtle.dig()
+				--print("grawi jest")
+			end
+		end
+		turtle.forward()
+	end 
+	--kon dlin
+
+	print("sher = ", i2)
+	print("sher % 2 = ",i2 % 2)
+	if	i2 % 2 == 0 then
+
+		turtle.turnRight()
+		print("Right 1 ")
+			if	turtle.inspect() ~= false then 
+			while turtle.inspect() ~= false do 
+				turtle.dig()
+				--print("grawi jest")
+			end
+		end
+			turtle.forward()
+
+			turtle.turnRight()
+			print("Right 5 ")
+			
+		else 
+			
+			turtle.turnLeft()
+			print("Right 2 ")
+			if	turtle.inspect() ~= false then 
+			while turtle.inspect() ~= false do 
+				turtle.dig()
+				--print("grawi jest")
+			end
+		end
+			turtle.forward()
+			turtle.turnLeft()
+
+	end
+
+end 
+--kon sher
+print("KONEC 1 CYKLA")
+turtle.digUp()
+turtle.up()
+turtle.turnRight()
+print("Right 3 ")
+		for i = 1, sher do 
+			if	turtle.inspect() ~= false then 
+			while turtle.inspect() ~= false do 
+				turtle.dig()
+				--print("grawi jest")
+			end
+		end
+			turtle.forward()
+		end
+turtle.turnLeft()
+end
+
+--konec na to mesto
+for i = 1, wys do 
+	turtle.down()
+end 
+--
