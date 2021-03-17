@@ -93,39 +93,42 @@ turtle.turnLeft()
 
 --konec--
 
+									---sorterowka na wybros bul 
+turtle.select(2)
+for i = 3, 16 do 
+turtle.select(2)
+if turtle.compareTo(i) == true then 
+	turtle.select(i)
+	print(turtle.compareTo(i))
+	turtle.dropDown(64)
+
+end
+
+end
+turtle.select(2)
+turtle.digUp()
+turtle.select(1)
+-------------- 
+turtle.select(3)
+for i = 4, 16 do 
+turtle.select(3)
+if turtle.compareTo(i) == true then 
+	turtle.select(i)
+	print(turtle.compareTo(i))
+	turtle.dropDown(64)
+
+end
+
+end
+turtle.select(1)
+
+										---sorterowka na wybros bul konec
 
 
+								----------Sbros start -------
 
+if turtle.getItemCount(16) > 1 then   
 
--- turtle.turnRight();
--- turtle.dig();
--- turtle.digUp();
--- turtle.digDown();
--- turtle.forward();
--- turtle.turnRight();
-
-
--- for i1 = 0, 8 do 
--- 	turtle.dig();
--- 	turtle.digUp();
--- 	turtle.digDown();
--- 	turtle.forward(); 
--- end
-
--- turtle.turnLeft();
--- turtle.dig();
--- turtle.digUp();
--- turtle.digDown();
-
--- --?????? ????????--
--- turtle.digUp()
--- turtle.select(16)
-
-
-
-
-
-if turtle.getItemCount(16) > 15 then   
   turtle.select(1)
   turtle.placeUp()
   turtle.select(1)
@@ -138,6 +141,12 @@ turtle.select(1)
 end
 turtle.select(1)
 end 
+
+							----------Sbros------
+
+
+
+
 turtle.dig();
 
 
@@ -153,6 +162,5 @@ turtle.turnRight()
 for i = 0, glub do 
 	turtle.forward()
 end
-
 
 
