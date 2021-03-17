@@ -1,4 +1,3 @@
-
 i = 0
 glub = 0
 sher = 0
@@ -10,38 +9,60 @@ sher=tonumber(read())
 sher = sher - 1
 
 
-while i ~= glub do
+while i ~= glub  do
+
 turtle.select(1)
 turtle.getFuelLevel() 
 print(turtle.getFuelLevel() ) 
-
+local success, data = turtle.inspect()
 
 turtle.dig();
-
-turtle.digDown();
 	--prow na gravij
-	if	turtle.inspect() ~= false then 
-		while turtle.inspect() ~= false do 
+	print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" then 
+
+			break
+			
+		else 
+
 			turtle.dig()
-			print("grawi jest")
+			print(data.name,"0")
 		end
 	end
 	--kon
+
+
+	--kon
 turtle.forward(); 
+print("poworot w levo 1 ")
 turtle.turnLeft();
 
 
 for i1 = 1, sher do 
-	turtle.dig();
-	turtle.digUp();
-	turtle.digDown();
+	turtle.dig()
+	turtle.digUp()
+	turtle.digDown()
 	--prow na gravij
-	if	turtle.inspect() ~= false then 
-		while turtle.inspect() ~= false do 
+	print(data.name, "1")	
+while	turtle.inspect() ~= false do
+		local success, data = turtle.inspect()
+
+		if data.name == "minecraft:lava" then 
+			break
+			
+			
+		else 
+
 			turtle.dig()
-			print("grawi jest")
+			print(data.name,"1")
+
 		end
-	end
+		end
 	--kon
 
 	turtle.forward(); 
@@ -64,11 +85,18 @@ for i1 = 1, sher do
 	turtle.dig();
 	turtle.digUp();
 	turtle.digDown();
+	print(data.name, "2")
 	--prow na gravij
-	if	turtle.inspect() ~= false then 
-		while turtle.inspect() ~= false do 
+	while	turtle.inspect() ~= false do
+			local success, data = turtle.inspect()
+		if data.name == "minecraft:lava" then 
+
+			break
+			
+		else 
+
 			turtle.dig()
-			print("grawi jest")
+			print(data.name,"2")
 		end
 	end
 	--kon
@@ -78,15 +106,20 @@ end
 
 print("W nizz")
 turtle.digUp()
+turtle.digDown()
 turtle.down()
-turtle.digDown();
+turtle.digDown()
 turtle.down()
-turtle.digDown();
+turtle.digDown()
 turtle.down()
 
 
 
 
+
+
+
+print("poworot w levo 2 ")
 turtle.turnLeft()
 
 
@@ -141,7 +174,7 @@ end
 turtle.select(1)
 end 
 
-							----------Sbros------
+-- 							----------Sbros------
 
 
 
@@ -158,8 +191,6 @@ turtle.turnRight()
 
 
 
-for i = 0, glub do 
+for i = 0, glub - 1 do 
 	turtle.forward()
 end
-
-
