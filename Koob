@@ -58,12 +58,22 @@ for i2 = 1, sher do
 	for i3 = 1, dlin do
 
     
-		if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+		print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 		turtle.forward()
 	end 
 	--kon dlin
@@ -74,12 +84,22 @@ for i2 = 1, sher do
 
 		turtle.turnRight()
 		print("Right 1 ")
-			if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+			print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 			turtle.forward()
 
 			turtle.turnRight()
@@ -89,12 +109,22 @@ for i2 = 1, sher do
 			
 			turtle.turnLeft()
 			print("Right 2 ")
-			if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+			print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 			turtle.forward()
 			turtle.turnLeft()
 
@@ -108,12 +138,22 @@ turtle.up()
 turtle.turnRight()
 print("Right 3 ")
 		for i = 1, sher do 
-			if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+			print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 			turtle.forward()
 		end
 turtle.turnLeft()
@@ -149,12 +189,22 @@ for i2 = 1, sher do
 	for i3 = 1, dlin do
 
     
-		if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+		print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 		turtle.forward()
 	end 
 	--kon dlin
@@ -165,12 +215,22 @@ for i2 = 1, sher do
 
 		turtle.turnRight()
 		print("Right 1 ")
-			if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+			print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 			turtle.forward()
 
 			turtle.turnRight()
@@ -180,12 +240,22 @@ for i2 = 1, sher do
 			
 			turtle.turnLeft()
 			print("Right 2 ")
-			if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+			print(data.name, "0")	
+
+while turtle.inspect() ~= false do
+
+	local success, data = turtle.inspect()
+	print(data.name,"0")
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+
+			break
+			
+		else 
+
+			turtle.dig()
+			print(data.name,"0")
 		end
+	end
 			turtle.forward()
 			turtle.turnLeft()
 
@@ -199,11 +269,16 @@ turtle.down()
 turtle.turnRight()
 print("Right 3 ")
 		for i = 1, sher do 
-			if	turtle.inspect() ~= false then 
-			while turtle.inspect() ~= false do 
-				turtle.dig()
-				--print("grawi jest")
-			end
+			print(data.name, "0")	
+		while turtle.inspect() ~= false do
+			local success, data = turtle.inspect()
+			print(data.name,"0")
+				if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
+					break
+				else 
+			turtle.dig()
+			print(data.name,"0")
+				end
 		end
 			turtle.forward()
 		end
