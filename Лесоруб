@@ -1,0 +1,130 @@
+local success, data = turtle.inspect()
+k = 0
+k1 = 0
+
+function rub()
+	while turtle.inspect() == true do
+	turtle.inspect()
+	local success, data = turtle.inspect()
+	print(data.name, "1")
+	if data.name == "minecraft:dark_oak_log" or data.name == "minecraft:birch_log" then
+		print(data.name)
+		turtle.dig()
+		turtle.digUp()
+		turtle.up()
+		
+	else
+		break;
+	end
+	k = k + 1 
+end
+	if k > 1 then
+	k = k - 1
+	end
+	print(data.name, "2")
+	print(k)
+
+for i = k, 0, -1 do 
+	turtle.down()
+		print("i = " ,i)
+
+	if i == 0 then 
+		turtle.select(1)
+		turtle.place()		
+	end
+end
+turtle.turnRight()
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+
+end
+--====================koniec rub ===============
+
+function rub1()
+	while turtle.inspect() == true do
+	turtle.inspect()
+	local success, data = turtle.inspect()
+	print(data.name, "1")
+	if data.name == "minecraft:dark_oak_log" or data.name == "minecraft:birch_log" then
+		print(data.name)
+		turtle.dig()
+		turtle.digUp()
+		turtle.up()
+		
+	else
+		break;
+	end
+	k1 = k1 + 1 
+end
+	if k1 > 1 then
+	k1 = k1 - 1
+	end
+
+	print(data.name, "2")
+	print(k1)
+
+for i = k1, 0, -1 do 
+	turtle.down()
+		print("i = " ,i)
+
+	if i == 0 then 
+		turtle.select(2)
+		turtle.place()		
+	end
+end
+turtle.turnLeft()
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+
+end
+
+--===========================================================--
+
+rub()
+for i2 = 1 , 19 do
+
+turtle.inspect()
+
+if i2 % 3 == 0 then 
+	rub()
+
+end
+
+
+end
+
+
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+
+rub1()
+for i2 = 1 , 19 do
+
+turtle.inspect()
+
+if i2 % 3 == 0 then 
+	rub1()
+
+end
+
+
+end
+turtle.turnRight()
+turtle.turnRight()
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
