@@ -24,7 +24,7 @@ while turtle.inspect() ~= false do
 
 	local success, data = turtle.inspect()
 	print(data.name,"0")
-		if data.name == "minecraft:lava" then 
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
 
 			break
 			
@@ -52,7 +52,7 @@ for i1 = 1, sher do
 while	turtle.inspect() ~= false do
 		local success, data = turtle.inspect()
 
-		if data.name == "minecraft:lava" then 
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
 			break
 			
 			
@@ -89,7 +89,7 @@ for i1 = 1, sher do
 	--prow na gravij
 	while	turtle.inspect() ~= false do
 			local success, data = turtle.inspect()
-		if data.name == "minecraft:lava" then 
+		if data.name == "minecraft:lava" or data.name == "minecraft:water" then 
 
 			break
 			
